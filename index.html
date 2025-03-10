@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIV WORK STUDIO</title>
+   
+    <link rel="icon" type="images/jpeg" href="images/website logo.jpg">
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to your CSS file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500&family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar"> <!-- Navbar Section -->
+            <div class="logo">Shiv Work Studio</div> <!-- Replace with your logo (image or text) -->
+            <ul class="nav-links" id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="pricing.html">Pricing</a></li> <!-- Add Pricing link -->
+            </ul>
+        </nav>
+    </header>
+    
+    <script src="js/rainbow-effect.js"></script>
+    <script>
+        const navbar = document.getElementById('navbar');
+        const toggleButton = document.createElement('button');
+        toggleButton.innerHTML = '☰'; // Hamburger icon
+        toggleButton.onclick = () => {
+            navbar.classList.toggle('active');
+        };
+        document.body.insertBefore(toggleButton, navbar);
+    </script>
+
+    <section class="hero-header"> <!-- Hero Header Section -->
+        <div class="hero-content">
+            <h1>Explore Our Comprehensive Range of Services at Shiv Work Studio</h1> <!-- Main Headline -->
+            <p>Your One-Stop Solution for Computer Services and Professional Support</p> <!-- Sub Headline/Description -->
+            <a href="#services" class="button">Learn More</a> <!-- CTA Button - Link to Services section -->
+        </div>
+    </section>
+
+    <section class="features-list"> <!-- Features List Section -->
+        <div class="feature-item">
+            <img src="images/feature-icon-1.png" alt="Feature 1"> <!-- Replace with your icon -->
+            <h3>Your One-Stop Solution for Computer Services and Professional Support</h3>
+            <p>At Shiv Work Studio, we specialize in computer servicing, online education, and creative solutions.</p>
+            <a href="#">Learn More ></a>
+        </div>
+        <div class="feature-item">
+            <img src="images/feature-icon-2.png" alt="Feature 2"> <!-- Replace with your icon -->
+            <h3>Professional Computer Servicing for Hardware and Software Issues</h3>
+            <p>We offer expert hardware and software repair services to keep your computers running smoothly.</p>
+            <a href="#">Get help ></a>
+        </div>
+        <div class="feature-item">
+            <img src="images/feature-icon-3.png" alt="Feature 3"> <!-- Replace with your icon -->
+            <h3>Enhance Your Skills With Our Computer Education Courses</h3>
+            <p>Sign up for courses to master essential software and computer operations.</p>
+            <a href="#">Sign Up ></a>
+        </div>
+    </section>
+
+    <section class="services-section" id="services"> <!-- Services Section - ID added for "Learn More" link -->
+        <h2>Services</h2> <!-- Section Heading -->
+        <div class="service-categories">
+            <div class="service-category">
+                <h3>Computer Servicing</h3>
+                <p>Hardware and Software Repair, Troubleshooting, etc.</p>
+                <a href="services.html#computer-servicing">Learn More</a>
+            </div>
+            <div class="service-category">
+                <h3>Basic Work Services</h3>
+                <p>Photo Editing, PPT Making, Online Tasks, etc.</p>
+                <a href="services.html#basic-work">Learn More</a>
+            </div>
+            <div class="service-category">
+                <h3>Computer Teaching</h3>
+                <p>Basic Computer Courses for Students.</p>
+                <a href="services.html#computer-teaching">Learn More</a>
+            </div>
+            <div class="service-category">
+                <h3>College Notes</h3>
+                <p>Arts Stream Notes, NEP 2020 Notes.</p>
+                <a href="services.html#college-notes">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-showcase"> <!-- Project Showcase / Gallery Section -->
+        <h2>Project Showcase</h2>
+        <p>Explore our past projects and service highlights.</p>
+        <div class="project-grid">
+            <div class="project-item"><img src="images/placeholder-image.png" alt="Project 1"></div> <!-- Placeholder images -->
+            <div class="project-item"><img src="images/placeholder-image.png" alt="Project 2"></div>
+            <div class="project-item"><img src="images/placeholder-image.png" alt="Project 3"></div>
+            <div class="project-item"><img src="images/placeholder-image.png" alt="Project 4"></div>
+            <div class="project-item"><img src="images/placeholder-image.png" alt="Project 5"></div>
+            <div class="project-item"><img src="images/placeholder-image.png" alt="Project 6"></div>
+        </div>
+    </section>
+
+    <section class="testimonial-section"> <!-- Testimonial Section -->
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-slider"> <!-- You can implement a slider later with JS -->
+            <div class="testimonial">
+                <p>"Shiv Work Studio transformed our vision into a stunning 3D website that exceeded our expectations! Their attention to detail and creativity truly set them apart."</p>
+                <div class="testimonial-author">
+                    <img src="images/testimonial-author-1.jpg" alt="John Doe"> <!-- Author Image -->
+                    <p><strong>John Doe</strong><br><span>CEO, Tech Solutions</span></p>
+                </div>
+            </div>
+            <!-- Add more testimonials here -->
+        </div>
+    </section>
+
+    <section class="cta-section"> <!-- Call to Action Section -->
+        <h2>Get Started with Us Today</h2>
+        <p>Reach out for a personalized quote or to learn more about our services.</p>
+        <div class="cta-buttons">
+            <a href="contact.html" class="button primary">Contact</a>
+            <a href="pricing.html" class="button secondary">Quote</a>
+        </div>
+    </section>
+
+    <section class="team-section"> <!-- Team Section -->
+        <h2>Our Team</h2>
+        <p>Meet the talented individuals behind Shiv Work Studio.</p>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="images/team-member-1.jpg" alt="Shiv Patel"> <!-- Team Member Image -->
+                <h3>Shiv Patel</h3>
+                <p>Founder & Developer</p>
+                <p>Shiv is passionate about creating user-friendly and engaging web experiences.</p>
+                <div class="social-links"> <!-- Social Links (optional) -->
+                    <a href="#"><img src="images/social-icon-linkedin.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="images/social-icon-twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+            <!-- Add other team members -->
+        </div>
+        <div class="hiring-section"> <!-- "We're Hiring" Section -->
+            <h3>We're hiring!</h3>
+            <p>Discover your potential with us today!</p>
+            <a href="#" class="button secondary">Open positions</a>
+        </div>
+    </section>
+
+    <section class="faq-section"> <!-- FAQ Section -->
+        <h2>FAQs</h2>
+        <p>Find answers to common questions about our services, pricing, and procedures here.</p>
+        <div class="faq-items">
+            <div class="faq-item">
+                <div class="faq-question">What services do you offer?</div>
+                <div class="faq-answer">We offer a range of services including computer servicing, photo editing, and online teaching. Our focus is on providing quality support for both hardware and software issues. Additionally, we provide creative digital services and computer education programs.</div>
+            </div>
+             <!-- Add more FAQ items -->
+        </div>
+        <a href="faq.html" class="button secondary">Contact</a> <!-- Link to a dedicated FAQ page if you create one -->
+    </section>
+
+    <section class="contact-section"> <!-- Contact Section (at the bottom) -->
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you!</p>
+        <div class="contact-details">
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:shivworkstudio@gmail.com">shivworkstudio@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:7085638470">7085638470</a></p>
+                <p><strong>Office:</strong> 123 Sample St, Sydney NSW 2000 AU</p> <!-- Replace with your address if applicable -->
+                <a href="#">Get Directions ></a> <!-- Link to Google Maps Directions (optional) -->
+            </div>
+            <div class="contact-map">
+                <img src="images/placeholder-map.png" alt="Map"> <!-- Placeholder map image -->
+            </div>
+        </div>
+    </section>
+
+    <footer> <!-- Footer Section -->
+        <div class="footer-content">
+            <div class="footer-logo">Logo</div> <!-- Footer Logo -->
+            <div class="footer-links">
+                <div class="quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li> <!-- Add blog link if you have a blog -->
+                    </ul>
+                </div>
+                <div class="resources">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Portfolio</a></li> <!-- Add portfolio link if you have a portfolio page -->
+                    </ul>
+                </div>
+                <div class="stay-connected">
+                    <h3>Stay Connected</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="subscribe">
+                    <h3>Subscribe</h3>
+                    <p>Join our newsletter for updates.</p>
+                    <form>
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Shiv Work Studio. All rights reserved.</p> <!-- Replace with your copyright info -->
+            <div class="footer-bottom-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Settings</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
